@@ -1,0 +1,491 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+.lottemartdream * {
+   font-family: 'LotteMartDream', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol{
+    list-style: none;
+}
+img, video{
+    vertical-align: middle;
+}
+body{
+    min-width: 1500px;
+    font-family: 'yg-jalnan';
+    font-size: 16px;
+    line-height: 23px;
+    color: #23b6bf;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*mainbanner*/
+#mainbanner{
+    position: relative;
+}
+#mainbanner> img{
+    width: 100%;
+    display: block;
+}
+.header{
+    width: 1320px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 32px;
+}
+.h_logo{
+    float: left;
+}
+.gnb{
+    float: right;
+    margin-top: 61px;
+}
+.gnb li{
+    padding-right: 107px;
+    float: left;
+    color: #23b6bf;
+    font-size: 16px;
+}
+.gnb li:nth-child(5){
+    padding-right: 0;
+}
+.gnb li:hover a{
+    color: #dca517;
+}
+
+/*menu*/
+#menu_in{
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+}
+#menu_in h1{
+    line-height: 100%;
+    font-size: 40px;
+    padding-top: 136px;
+}
+#menu_in ul{
+    padding: 80px 0 151px;
+}
+#menu_in ul li{
+    float: left;
+    margin-right: 40px;
+    position: relative;
+}
+#menu_in ul li:nth-child(4){
+    margin-right: 0;
+}
+#menu_in ul li h2{
+    padding-bottom: 10px;
+}
+.ho_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #db3644;
+}
+.ho_box2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7afaf;
+}
+.ho_box3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f3d12f;
+}
+.ho_box4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b37a60;
+}
+.ho_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+#menu_in ul li .ho_box,
+#menu_in ul li .ho_box2,
+#menu_in ul li .ho_box3,
+#menu_in ul li .ho_box4{
+    opacity: 0;
+    transition: all 0.5s;
+}
+#menu_in ul li:hover .ho_box,
+#menu_in ul li:hover .ho_box2,
+#menu_in ul li:hover .ho_box3,
+#menu_in ul li:hover .ho_box4{
+    opacity: 1;
+}
+.j_text{
+    font-size: 18px;
+    color: #db3644;
+}
+.j_text2{
+    font-family: 'LotteMartDream';
+    font-weight: 700;
+    color: #db3644;
+}
+.s_text{
+    font-size: 18px;
+    color: #f7afaf;
+}
+.s_text2{
+    font-family: 'LotteMartDream';
+    font-weight: 700;
+    color: #f7afaf;
+}
+.t_text{
+    font-size: 18px;
+    color: #f3d12f;
+}
+.t_text2{
+    font-family: 'LotteMartDream';
+    font-weight: 700;
+    color: #f3d12f;
+}
+.d_text{
+    font-size: 18px;
+    color: #b37a60;
+}
+.d_text2{
+    font-family: 'LotteMartDream';
+    font-weight: 700;
+    color: #b37a60;
+}
+
+/*best*/
+#best_in{
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+#best_in> h1{
+    font-size: 40px;
+    line-height: 100%;
+}
+.bestswiper img{
+    width:100%;
+    display: block;
+}
+.bestswiper .swiper-slide h2{
+    padding:30px 0 25px;
+}
+.bestswiper .swiper-slide{
+    padding:10px;
+    box-sizing: border-box;
+}
+.bestswiper{
+    margin: 132px 0 209px;
+}
+.prev_button{
+    left: -70px;
+    right: auto;
+    top:60%;
+    width: 70px;
+    height: 70px;
+}
+.next_button{
+    top:60%;
+    right: -70px;
+    left: auto;
+    width: 70px;
+    height: 70px;
+}
+/*지금 현재 가운데 보이고 있는 슬라이드는 .swiper-slide-active 라는 클래스를 가지는데 이를 이용해 스타일을 꾸며줌. 슬라이드가 3개일때 앞뒤로는 swiper-slide-prev, swiper-slide-next 클래스가 부여되는 이를 활용. slide개수가 4개 이상이면 모양이 제대로 잡히지 않으므로, 3개 이하일때 사용할것.*/
+.bestswiper .swiper-slide-prev{
+    transform: scale(0.7);
+
+}
+.bestswiper .swiper-slide-next{
+    transform: scale(0.7);
+
+}
+.bestswiper .swiper-slide-active{
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.next_button:after{content:url(../images/right.png);}
+.prev_button:after{content:url(../images/left.png);}
+.bestswiper .b_title{
+    font-size: 22px;
+    color: #ecd633;
+}
+.bestswiper .b_price{
+    color: #ecd633;
+}
+.bestswiper .b_title2{
+    font-size: 22px;
+    color: #adce51;
+}
+.bestswiper .b_price2{
+    color: #adce51;
+}
+.bestswiper .b_title3{
+    font-size: 22px;
+    color: #f0682d;
+}
+.bestswiper .b_price3{
+    color: #f0682d;
+}
+.bestswiper .b_title4{
+    font-size: 22px;
+    color: #5a141c;
+}
+.bestswiper .b_price4{
+    color: #5a141c;
+}
+.bestswiper .b_title5{
+    font-size: 22px;
+    color: #d9452d;
+}
+.bestswiper .b_price5{
+    color: #d9452d;
+}
+
+/*promise*/
+#promise_in{
+    width: 1036px;
+    margin: auto;
+    text-align: center;
+}
+#promise_in h1{
+    font-size: 40px;
+    line-height: 100%;
+}
+#promise_in ul li{
+    float: left;
+    padding: 109px 0 233px;
+}
+#promise_in ul li:nth-child(2){
+    margin: 0 74px;
+}
+#promise_in ul li p{
+    padding-top: 53px;
+    font-size: 18px;
+}
+
+/*slogan*/
+#slogan{
+    background-attachment: fixed;
+    background-image: url(../images/slogan.png);
+    background-size: cover;
+}
+#slogan img{
+    width: 100%;
+    display: block;
+}
+
+/*franchise*/
+#store_in{
+    width: 1320px;
+    margin: auto;
+    padding: 248px 0 188px;
+}
+#store_in h1{
+    font-size: 40px;
+    line-height: 100%;
+    color: #ffc614;
+    padding-bottom: 68px;
+}
+.st_title{
+    font-size: 34px;
+    line-height: 100%;
+    padding-bottom: 65px;
+    font-family: 'LotteMartDream';
+    font-weight: 700;
+}
+.st_text{
+    line-height: 40px;
+    font-size: 21px;
+    padding-bottom: 66px;
+    font-family: 'LotteMartDream';
+    font-weight: 700;
+}
+.st_btn a{
+    display: inline-block;
+    font-family: 'LotteMartDream';
+    font-weight: 700;
+    padding: 14.5px 78px 14.5px 28px;
+    border-radius: 25px;
+    background-color: #808080;
+    color: #fff;
+    background-image: url(../images/st_icon.png);
+    background-repeat: no-repeat;
+    background-position: 120px 12px;
+}
+.st_btn a:hover{
+    background-position: 130px 12px;
+    transition: all 0.5s;
+}
+.strong{
+    background-image: url(../images/bg_strong.png);
+    width: 595px;
+    height: 356px;
+    float: left;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #808080;
+}
+.progress{
+    background-image: url(../images/bg_progress.png);
+    width: 595px;
+    height: 356px;
+    float: right;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #808080;
+}
+
+/*event*/
+#event_in{
+    width: 1320px;
+    margin: auto;
+}
+#event_in h1{
+    font-size: 40px;
+    line-height: 100%;
+    color: #ffc614;
+}
+#event_in ul{
+    text-align: center;
+    padding: 68px 0 182px;
+}
+#event_in ul li{
+    float: left;
+    width: 368px;
+    height: 364px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.card1{
+    border: 1px solid #ee101f;
+    transition: all 0.5s;
+    color: #ff717b;
+    font-size: 20px;
+}
+.card2{
+    transition: all 0.5s;
+    margin: 0 108px;
+    border: 1px solid #ffe06c;
+    color: #ffc614;
+    font-size: 20px;
+}
+.card3{
+    border: 1px solid #49c6c5;
+    transition: all 0.5s;
+    color: #49c6c5;
+    font-size: 20px;
+}
+#event_in ul li.card1:hover{
+    box-shadow: 10px 10px 0 #ee101f;
+}
+#event_in ul li.card2:hover{
+    box-shadow: 10px 10px 0 #ffe06c;
+}
+#event_in ul li.card3:hover{
+    box-shadow: 10px 10px 0 #49c6c5;
+}
+#event_in ul li p{
+    padding-top: 50px;
+}
+
+/*iframe*/
+#introduce{
+    background: url(../images/bg_iframe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#introduce_in{
+    width: 1320px;
+    margin: auto;
+    padding: 300px 0 200px;
+}
+
+/*footer*/
+#footer{
+    background-color: #949493;
+}
+#footer_in{
+    width: 1320px;
+    margin: auto;
+}
+.logobox{
+    float: left;
+    padding-top: 50.5px;
+}
+.copybox{
+    float: right;
+    text-align: right;
+    padding-top: 60px;
+    font-size: 14px;
+    font-family: 'LotteMartDream';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+.copybox ul li{
+    float: left;
+    margin-left: 10px;
+}
+.copybox ul li img{
+    opacity: 0.5;
+}
+.copybox ul li:hover img{
+    opacity: 1;
+}
+.copybox ul{
+    display: inline-block;
+    padding-top: 20px;
+}

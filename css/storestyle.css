@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LotteMartHappy';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
+}
+  
+@font-face {
+    font-family: 'LotteMartHappy';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff');
+}
+  
+.lottemarthappy * {
+   font-family: 'LotteMartHappy', sans-serif;
+}
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol{
+    list-style: none;
+}
+img, video{
+    vertical-align: middle;
+}
+body{
+    min-width: 1500px;
+    font-family: 'yg-jalnan';
+    font-size: 16px;
+    line-height: 23px;
+    color: #333;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*mainbanner*/
+#mainbanner{
+    position: relative;
+}
+#mainbanner> img{
+    width: 100%;
+    display: block;
+}
+.header{
+    width: 1320px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 32px;
+}
+.h_logo{
+    float: left;
+}
+.gnb{
+    float: right;
+    margin-top: 61px;
+}
+.gnb li{
+    padding-right: 107px;
+    float: left;
+    color: #23b6bf;
+    font-size: 16px;
+}
+.gnb li:nth-child(5){
+    padding-right: 0;
+}
+.gnb li:hover a{
+    color: #dca517;
+}
+.sub_box{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #4b974f;
+}
+.sub_box h1{
+    font-size: 80px;
+    line-height: 100%;
+    padding-bottom: 80px;
+}
+.sub_box p{
+    font-size: 25px;
+    line-height: 110%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+
+/*menu*/
+#wrapper{
+    width: 1320px;
+    margin: 224px auto;
+}
+#wrapper ul.tabs{
+    position: relative;
+    float: left;
+    width: 589px;
+}
+#wrapper ul.tabs li.tab1{
+    position: absolute;
+    top: 155px;
+    left: 118px;
+}
+#wrapper ul.tabs li.tab2{
+    position: absolute;
+    top: 130px;
+    left: 347px;
+}
+#wrapper ul.tabs li.tab3{
+    position: absolute;
+    top: 239px;
+    left: 151px;
+}
+#wrapper ul.tabs li.tab4{
+    position: absolute;
+    top: 312px;
+    left: 239px;
+}
+#wrapper ul.tabs li.tab5{
+    position: absolute;
+    top: 385px;
+    left: 100px;
+}
+#wrapper ul.tabs li.tab6{
+    position: absolute;
+    top: 400px;
+    left: 183px;
+}
+#wrapper ul.tabs li.tab7{
+    position: absolute;
+    top: 540px;
+    left: 141px;
+}
+#wrapper ul.tabs li.tab8{
+    position: absolute;
+    top: 645px;
+    left: 103px;
+}
+#wrapper ul.tabs li.tab9{
+    position: absolute;
+    top: 740px;
+    left: 94px;
+}
+#wrapper ul.tabs li.tab10{
+    position: absolute;
+    top: 400px;
+    left: 400px;
+}
+#wrapper ul.tabs li.tab11{
+    position: absolute;
+    top: 500px;
+    left: 393px;
+}
+#wrapper ul.tabs li.tab12{
+    position: absolute;
+    top: 620px;
+    left: 333px;
+}
+#wrapper ul.tabs li.tab13{
+    position: absolute;
+    top: 585px;
+    left: 495px;
+}
+#wrapper ul.tabs li.tab14{
+    position: absolute;
+    top: 653px;
+    left: 466px;
+}
+#wrapper ul.tabs li.tab15{
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+}
+#wrapper .tab_container{
+    float: right;
+    width: 731px;
+    padding-left: 191px;
+    box-sizing: border-box;
+}
+.tab_container> h1{
+    font-family: 'LotteMartHappy';
+    font-size: 40px;
+    color: #4b974f;
+    line-height: 100%;
+    padding-top: 23px;
+    padding-bottom: 37px;
+}
+#city,
+#borough{
+    border: 3px solid #ffcf00;
+    border-radius: 15.5px;
+    width: 155px;
+    height: 31px;
+    padding-left: 13px;
+    font-size: 13px;
+    font-weight: normal;
+    appearance: none;
+    background: url(../images/store_arrow.png) no-repeat;
+    background-position: 95% center;
+    outline-style: none;
+    margin-bottom: 77px;
+}
+#city{
+    margin-right: 13px;
+}
+#borough{
+    margin-right: 15px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: left;
+    height: 68px;
+    padding-left: 18px;
+}
+.store_box{
+    margin-bottom: 50px;
+}
+.store_text> h2{
+    font-family: 'LotteMartHappy';
+    font-size: 16px;
+    padding-top: 11px;
+    color: #ffcf00;
+}
+.store_text p{
+    font-family: 'LotteMartHappy';
+    font-size: 14px;
+    padding-top: 6px;
+    color: #4b974f;
+}
+/*footer*/
+#footer{
+    background-color: #949493;
+}
+#footer_in{
+    width: 1320px;
+    margin: auto;
+}
+.logobox{
+    float: left;
+    padding-top: 50.5px;
+}
+.copybox{
+    float: right;
+    text-align: right;
+    padding-top: 60px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+.copybox ul li{
+    float: left;
+    margin-left: 10px;
+}
+.copybox ul li img{
+    opacity: 0.5;
+}
+.copybox ul li:hover img{
+    opacity: 1;
+}
+.copybox ul{
+    display: inline-block;
+    padding-top: 20px;
+}

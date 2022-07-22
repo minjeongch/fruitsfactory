@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1500">
+    <title>FRUITS FACTORY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/noticestyle.css">
+</head>
+
+<body>
+    <!--mainbanner-->
+    <div id="mainbanner">
+        <img src="images/sub05_bg.png" alt="메인배너">
+        <div class="header clearfix">
+            <h1 class="h_logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="헤더로고">
+                </a>
+            </h1>
+            <ul class="gnb clearfix">
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="franchise.html">FRANCHISE</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="notice.html">NOTICE</a></li>
+            </ul>
+        </div>
+        <div class="sub_box">
+            <h1>NOTICE</h1>
+            <p>
+                후르츠팩토리의 각종 소식들을<br>
+                확인해보세요!
+            </p>
+        </div>
+    </div>
+    
+    <!--menu-->
+    <div id="wrapper">	
+        <!--탭 메뉴 영역 -->
+        <!--누르는 탭 버튼 갯수에 맞춰서 li를 만들어준다. 모든 li 안의 a 태그 경로는 다른 id를 가르키고 있어야 한다-->
+        <ul class="tabs clearfix">
+            <li><a href="#tab1">전체이벤트</a></li>
+            <li><a href="#tab2">진행중이벤트</a></li>
+            <li><a href="#tab3">지난이벤트</a></li>
+        </ul>
+    
+        <!--탭 콘텐츠 영역 -->
+        <div class="tab_container">
+            <!--각 탭과 이어진 박스에는 해당 id가 지정되어야 하고 모든 탭 박스들은 tab_content라는 동일한 클래스를 지녀야한다-->
+            <div id="tab1" class="tab_content">
+                <ul class="event clearfix">
+                    <li>
+                        <div class="img_box">
+                            <img src="images/event01.png" alt="이벤트01">
+                        </div>
+                        <div class="text_box">
+                            <h3>
+                                PAYCO결제시 5% 할인
+                            </h3>
+                            <p>
+                                <span>이벤트기간</span> : 2022.06.25 ~ 2022.08.30
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="images/event02.png" alt="이벤트02">
+                        </div>
+                        <div class="text_box">
+                            <h3>
+                                피치라인에이드 출시기념 30% 할인
+                            </h3>
+                            <p>
+                                <span>이벤트기간</span> : 2022.06.25 ~ 2022.08.30
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="images/event03.png" alt="이벤트03">
+                        </div>
+                        <div class="text_box">
+                            <h3>
+                                배달의민족 입점기념 2,000원 할인쿠폰 증정
+                            </h3>
+                            <p>
+                                <span>이벤트기간</span> : 2022.06.25 ~ 2022.08.30
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="images/event04.png" alt="이벤트04">
+                        </div>
+                        <div class="text_box">
+                            <h3>
+                                후르츠팩토리X파라다이스호텔 숙박권증정 이벤트
+                            </h3>
+                            <p>
+                                <span>이벤트기간</span> : 2022.06.25 ~ 2022.08.30
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="images/event05.png" alt="이벤트05">
+                        </div>
+                        <div class="text_box">
+                            <h3>
+                                수고했어 친구들아! 고3수험생 35% 특별할인
+                            </h3>
+                            <p>
+                                <span>이벤트기간</span> : 2022.06.25 ~ 2022.08.30
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="images/event06.png" alt="이벤트06">
+                        </div>
+                        <div class="text_box">
+                            <h3>
+                                2022 새해 누구나 3,000원 할인쿠폰 증정
+                            </h3>
+                            <p>
+                                <span>이벤트기간</span> : 2022.06.25 ~ 2022.08.30
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="tab2" class="tab_content">
+                <ul class="event clearfix">
+                    <li>
+                        <div class="img_box">
+                            <img src="images/event01.png" alt="이벤트01">
+                        </div>
+                        <div class="text_box">
+                            <h3>
+                                PAYCO결제시 5% 할인
+                            </h3>
+                            <p>
+                                <span>이벤트기간</span> : 2022.06.25 ~ 2022.08.30
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="images/event02.png" alt="이벤트02">
+                        </div>
+                        <div class="text_box">
+                            <h3>
+                                피치라인에이드 출시기념 30% 할인
+                            </h3>
+                            <p>
+                                <span>이벤트기간</span> : 2022.06.25 ~ 2022.08.30
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="images/event03.png" alt="이벤트03">
+                        </div>
+                        <div class="text_box">
+                            <h3>
+                                배달의민족 입점기념 2,000원 할인쿠폰 증정
+                            </h3>
+                            <p>
+                                <span>이벤트기간</span> : 2022.06.25 ~ 2022.08.30
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="images/event04.png" alt="이벤트04">
+                        </div>
+                        <div class="text_box">
+                            <h3>
+                                후르츠팩토리X파라다이스호텔 숙박권증정 이벤트
+                            </h3>
+                            <p>
+                                <span>이벤트기간</span> : 2022.06.25 ~ 2022.08.30
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="tab3" class="tab_content">
+                <ul class="event clearfix">
+                    <li>
+                        <div class="img_box">
+                            <img src="images/event05.png" alt="이벤트05">
+                        </div>
+                        <div class="text_box">
+                            <h3>
+                                수고했어 친구들아! 고3수험생 35% 특별할인
+                            </h3>
+                            <p>
+                                <span>이벤트기간</span> : 2022.06.25 ~ 2022.08.30
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="images/event06.png" alt="이벤트06">
+                        </div>
+                        <div class="text_box">
+                            <h3>
+                                2022 새해 누구나 3,000원 할인쿠폰 증정
+                            </h3>
+                            <p>
+                                <span>이벤트기간</span> : 2022.06.25 ~ 2022.08.30
+                            </p>
+                        </div>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+    <!--탭 제이쿼리-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			//처음들어갔을때 모습 만들기...
+			$(".tab_content").hide(); //tab_content 부분을 모두 숨김.
+			$("ul.tabs li:first").addClass("active").show(); //첫번째 탭이 active클래스를 붙이고, 보여줌.
+			$(".tab_content:first").show(); //tab_contents중 첫번째꺼를 보여줌
+
+			//On Click Event
+			$("ul.tabs li").click(function() {
+
+				$("ul.tabs li").removeClass("active"); //Remove any "active" class
+				$(this).addClass("active"); //선택한 탭에만 active클래스 붙임
+				$(".tab_content").hide(); //모든 contents들 숨김
+
+				var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+				/*.attr( attributeName ) -> 선택한 요소의 속성의 값을 가져옵니다.
+				.find()는 어떤 요소의 하위 요소 중 특정 요소를 찾을 때 사용합니다.*/
+				$(activeTab).fadeIn(); //Fade in the active ID content(active되어있는 칸의 id 값을 가진 부분이 나타남)
+				return false;
+			});
+
+		});
+	</script>
+    <!--footer-->
+    <div id="footer">
+        <div id="footer_in" class="clearfix">
+            <div class="logobox">
+                <h1>
+                    <a href="#">
+                        <img src="images/fsub_logo.png" alt="푸터로고">
+                    </a>
+                 </h1>
+            </div>
+            <div class="copybox">
+                <p>
+                    OPEN 09:30 CLOSE 21:00 | TEL 1588-1000<br>
+                    대표자 : 채민정<br>
+                    COPYRIGHTⓒ2022 FRUITS FACTORY ALL RIGHTS RESERVED
+                </p>
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <img src="images/facebook.png" alt="페북">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                             <img src="images/instagram.png" alt="인스타">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/youtube.png" alt="유튜브">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

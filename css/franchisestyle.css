@@ -1,0 +1,470 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LotteMartHappy';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
+}
+  
+@font-face {
+    font-family: 'LotteMartHappy';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff');
+}
+  
+.lottemarthappy * {
+   font-family: 'LotteMartHappy', sans-serif;
+}
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol{
+    list-style: none;
+}
+img, video{
+    vertical-align: middle;
+}
+body{
+    min-width: 1500px;
+    font-family: 'yg-jalnan';
+    font-size: 16px;
+    line-height: 23px;
+    color: #333;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*mainbanner*/
+#mainbanner{
+    position: relative;
+}
+#mainbanner> img{
+    width: 100%;
+    display: block;
+}
+.header{
+    width: 1320px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 32px;
+}
+.h_logo{
+    float: left;
+}
+.gnb{
+    float: right;
+    margin-top: 61px;
+}
+.gnb li{
+    padding-right: 107px;
+    float: left;
+    color: #23b6bf;
+    font-size: 16px;
+}
+.gnb li:nth-child(5){
+    padding-right: 0;
+}
+.gnb li:hover a{
+    color: #dca517;
+}
+.sub_box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+}
+.sub_box h1{
+    font-size: 80px;
+    line-height: 100%;
+    padding-bottom: 80px;
+}
+.sub_box p{
+    font-size: 25px;
+    line-height: 110%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+
+/*strong*/
+#strong_in{
+    width: 1320px;
+    margin: auto;
+    padding: 124px 150px;
+}
+#strong_in> h1{
+    text-align: center;
+    font-size: 40px;
+    line-height: 100%;
+    font-family: 'LotteMartHappy';
+    font-weight: 700;
+    padding-bottom: 93px;
+} 
+.fr01{
+    display: flex;
+    justify-content: flex-start;
+}
+.fr_img{
+    width: 474px;
+    height: 604px;
+}
+.fr_text01{
+    font-family: 'LotteMartHappy';
+    font-weight: 700;
+    width: 706px;
+    height: 604px;
+    background-image: url(../images/fr_bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 122px;
+    padding-left: 140px;
+    box-sizing: border-box;
+    margin-bottom: 72px;
+}
+.fr_text01> h1{
+    font-size: 50px;
+    line-height: 100%;
+    padding-top: 58px;
+    padding-bottom: 40px;
+    color: #442b23;
+}
+.fr_text01> h2{
+    font-size: 30px;
+    line-height: 42px;
+    padding-bottom: 70px;
+}
+.fr_text01> p{
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: normal;
+}
+.fr02{
+    display: flex;
+    justify-content: flex-end;
+}
+.fr_text02{
+    font-family: 'LotteMartHappy';
+    font-weight: 700;
+    width: 706px;
+    height: 604px;
+    background-image: url(../images/fr_bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 122px;
+    padding-left: 100px;
+    box-sizing: border-box;
+    margin-bottom: 72px;
+}
+.fr_text02> h1{
+    font-size: 50px;
+    line-height: 100%;
+    padding-top: 58px;
+    padding-bottom: 40px;
+    color: #442b23;
+}
+.fr_text02> h2{
+    font-size: 30px;
+    line-height: 42px;
+    padding-bottom: 70px;
+}
+.fr_text02> p{
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: normal;
+}
+
+/*progress*/
+#progress> h1{
+    text-align: center;
+    font-family: 'LotteMartHappy';
+    font-size: 40px;
+    line-height: 100%;
+}
+#progress_in{
+    width: 1172px;
+    margin: auto;
+    position: relative;
+}
+#progress_in ul li{
+    float: left;
+    margin-bottom: 58px;
+    position: relative;
+}
+#progress_in ul{
+    margin: 129px 0 104px;
+}
+#progress_in ul li:nth-child(2),
+#progress_in ul li:nth-child(5),
+#progress_in ul li:nth-child(8){
+    margin: 0 58px;
+}
+
+#progress_in ul li> h1{
+    position: absolute;
+    top: 152px;
+    left: 30px;
+    font-family: 'LotteMartHappy';
+    font-size: 42px;
+    line-height: 120%;
+}
+#progress_in ul li> p{
+    position: absolute;
+    top: 273px;
+    left: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
+.final_box{
+    text-align: center;
+    font-family: 'LotteMartHappy';
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+.final_t{
+    font-size: 42px;
+    line-height: 100%;
+    padding-bottom: 50px;
+}
+.final_s{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+.right01{
+    position: absolute;
+    top: 173px;
+    left: 375px;
+}
+.right02{
+    position: absolute;
+    top: 173px;
+    left: 783px;
+}
+.right03{
+    position: absolute;
+    top: 979px;
+    left: 375px;
+}
+.right04{
+    position: absolute;
+    top: 979px;
+    left: 783px;
+}
+.down01{
+    position: absolute;
+    top: 369px;
+    right: 148px;
+}
+.down02{
+    position: absolute;
+    top: 1190px;
+    right: 148px;
+}
+.down03{
+    position: absolute;
+    top: 780px;
+    left: 148px;
+}
+.left01{
+    position: absolute;
+    top: 577px;
+    left: 369px;
+}
+.left02{
+    position: absolute;
+    top: 577px;
+    left: 776px;
+}
+
+/*counsel*/
+#btn_box{
+    width: 270px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+.counsel_btn{
+    text-align: center;
+    display: inline-block;
+    font-family: 'LotteMartHappy';
+    font-size: 24px;
+    background-color: #d9cdba;
+    border-radius: 24px;
+    width: 270px;
+    height: 65px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.counsel_btn:hover{
+    background-color: #442b23;
+    color: #fff;
+}
+#counsel{
+    background-color: #d9cdba;
+    display: none;
+}
+#counsel_in{
+    width: 671px;
+    margin: auto;
+    padding: 100px 0;
+}
+#counsel_in> h1{
+    font-family: 'LotteMartHappy';
+    font-size: 40px;
+    line-height: 100%;
+    padding-bottom: 50px;
+}
+.name_box{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+.birth_box{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+.email_box{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+.tel_box{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+.wish_box{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 60px;
+}
+.submit_box{
+    text-align: right;
+}
+.left{
+    width: 150px;
+    font-family: 'LotteMartHappy';
+    font-size: 20px;
+    line-height: 100%;
+}
+.right{
+    font-size: 15px;
+    font-family: 'LotteMartHappy';
+    font-weight: 400;
+}
+.name{
+    border: none;
+    width: 165px;
+    height: 20px;
+    outline-style: none;
+}
+.birth{
+    border: none;
+    width: 132px;
+    height: 20px;
+    outline-style: none;
+    appearance: none;
+    background-image: url(../images/form_down.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+.email,
+.email_s{
+    border: none;
+    width: 132px;
+    height: 20px;
+    outline-style: none;
+}
+.wish{
+    border: none;
+    width: 150px;
+    height: 20px;
+    outline-style: none;
+    appearance: none;
+    background-image: url(../images/form_down.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+.email_s{
+    appearance: none;
+    background-image: url(../images/form_down.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+.tel{
+    width: 60px;
+    height: 20px;
+    border: none;
+    outline-style: none;
+}
+.submit{
+    width: 200px;
+    height: 48px;
+    border: none;
+    background-color: #736357;
+    border-radius: 24px;
+    color: #fff;
+    font-family: 'LotteMartHappy';
+    font-size: 20px;
+}
+.submit:hover{
+    opacity: 0.7;
+}
+/*footer*/
+#footer{
+    background-color: #949493;
+}
+#footer_in{
+    width: 1320px;
+    margin: auto;
+}
+.logobox{
+    float: left;
+    padding-top: 50.5px;
+}
+.copybox{
+    float: right;
+    text-align: right;
+    padding-top: 60px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+.copybox ul li{
+    float: left;
+    margin-left: 10px;
+}
+.copybox ul li img{
+    opacity: 0.5;
+}
+.copybox ul li:hover img{
+    opacity: 1;
+}
+.copybox ul{
+    display: inline-block;
+    padding-top: 20px;
+}

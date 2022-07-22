@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+.lottemartdream * {
+   font-family: 'LotteMartDream', sans-serif;
+}
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol{
+    list-style: none;
+}
+img, video{
+    vertical-align: middle;
+}
+body{
+    min-width: 1500px;
+    font-family: 'yg-jalnan';
+    font-size: 16px;
+    line-height: 23px;
+    color: #333;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*mainbanner*/
+#mainbanner{
+    position: relative;
+}
+#mainbanner> img{
+    width: 100%;
+    display: block;
+}
+.header{
+    width: 1320px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 32px;
+}
+.h_logo{
+    float: left;
+}
+.gnb{
+    float: right;
+    margin-top: 61px;
+}
+.gnb li{
+    padding-right: 107px;
+    float: left;
+    color: #23b6bf;
+    font-size: 16px;
+}
+.gnb li:nth-child(5){
+    padding-right: 0;
+}
+.gnb li:hover a{
+    color: #dca517;
+}
+.sub_box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #ff9579;
+}
+.sub_box h1{
+    font-size: 80px;
+    line-height: 100%;
+    padding-bottom: 80px;
+}
+.sub_box p{
+    font-size: 25px;
+    line-height: 110%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+
+/*menu*/
+#wrapper{
+    width: 1220px;
+    margin: auto;
+    text-align: center;
+}
+.menu{
+    margin: 197px 0 58px;
+}
+#wrapper .menu li{
+    float: left;
+    margin-bottom: 186px;
+    position: relative;
+}
+.ho_menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.menu li:hover .ho_menu{
+    opacity: 1;
+}
+.menu li:nth-child(2),
+.menu li:nth-child(5),
+.menu li:nth-child(8),
+.menu li:nth-child(11),
+.menu li:nth-child(14),
+.menu li:nth-child(17),
+.menu li:nth-child(20),
+.menu li:nth-child(23){
+    margin: 0 100px;
+}
+ul.tabs{
+    margin-top: 144px;
+    color: #ff9579;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 65px;
+}
+#wrapper ul.tabs li{
+    margin-left: 30px;
+    height: 65px;
+    width: 150px;
+}
+#wrapper ul.tabs li:nth-child(3),
+#wrapper ul.tabs li:nth-child(4),
+#wrapper ul.tabs li:nth-child(5){
+    width: 180px;
+}
+ul.tabs li:hover{
+    background-color: #ff9579;
+    border-radius: 30.5px;
+    color: #fff;
+}
+#wrapper ul.tabs li.active{
+    background-color: #ff9579;
+    border-radius: 30.5px;
+    color: #fff;
+}
+/*footer*/
+#footer{
+    background-color: #949493;
+}
+#footer_in{
+    width: 1320px;
+    margin: auto;
+}
+.logobox{
+    float: left;
+    padding-top: 50.5px;
+}
+.copybox{
+    float: right;
+    text-align: right;
+    padding-top: 60px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+.copybox ul li{
+    float: left;
+    margin-left: 10px;
+}
+.copybox ul li img{
+    opacity: 0.5;
+}
+.copybox ul li:hover img{
+    opacity: 1;
+}
+.copybox ul{
+    display: inline-block;
+    padding-top: 20px;
+}

@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1500">
+    <title>FRUITS FACTORY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/storestyle.css">
+</head>
+
+<body>
+    <!--mainbanner-->
+    <div id="mainbanner">
+        <img src="images/sub04_bg.png" alt="메인배너">
+        <div class="header clearfix">
+            <h1 class="h_logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="헤더로고">
+                </a>
+            </h1>
+            <ul class="gnb clearfix">
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="franchise.html">FRANCHISE</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="notice.html">NOTICE</a></li>
+            </ul>
+        </div>
+        <div class="sub_box">
+            <h1>STORE</h1>
+            <p>
+                전국 곳곳에 있는 후르츠팩토리<br>
+                매장을 확인해보세요!
+            </p>
+        </div>
+    </div>
+    
+    <!--menu-->
+    <div id="wrapper" class="clearfix">	
+        <!--탭 메뉴 영역 -->
+        <!--누르는 탭 버튼 갯수에 맞춰서 li를 만들어준다. 모든 li 안의 a 태그 경로는 다른 id를 가르키고 있어야 한다-->
+        <ul class="tabs clearfix">
+            <img src="images/map.png" alt="">
+            <li class="tab1">
+                <a href="#tab1">
+                    <img src="images/location.png" alt="서울" class="location_ho">
+                </a>
+            </li>
+            <li class="tab2">
+                <a href="#tab2">
+                    <img src="images/location.png" alt="강원도" class="location_ho">
+                </a>
+            </li>
+            <li class="tab3">
+                <a href="#tab3">
+                    <img src="images/location.png" alt="경기도" class="location_ho">
+                </a>
+            </li>
+            <li class="tab4">
+                <a href="#tab4">
+                    <img src="images/location.png" alt="충청북도" class="location_ho">
+                </a>
+            </li>
+            <li class="tab5">
+                <a href="#tab5">
+                    <img src="images/location.png" alt="충청남도" class="location_ho">
+                </a>
+            </li>
+            <li class="tab6">
+                <a href="#tab6">
+                    <img src="images/location.png" alt="대전" class="location_ho">
+                </a>
+            </li>
+            <li class="tab7">
+                <a href="#tab7">
+                    <img src="images/location.png" alt="전라북도" class="location_ho">
+                </a>
+            </li>
+            <li class="tab8">
+                <a href="#tab8">
+                    <img src="images/location.png" alt="광주" class="location_ho">
+                </a>
+            </li>
+            <li class="tab9">
+                <a href="#tab9">
+                    <img src="images/location.png" alt="전라남도" class="location_ho">
+                </a>
+            </li>
+            <li class="tab10">
+                <a href="#tab10">
+                    <img src="images/location.png" alt="경상북도" class="location_ho">
+                </a>
+            </li>
+            <li class="tab11">
+                <a href="#tab11">
+                    <img src="images/location.png" alt="대구" class="location_ho">
+                </a>
+            </li>
+            <li class="tab12">
+                <a href="#tab12">
+                    <img src="images/location.png" alt="경상남도" class="location_ho">
+                </a>
+            </li>
+            <li class="tab13">
+                <a href="#tab13">
+                    <img src="images/location.png" alt="울산" class="location_ho">
+                </a>
+            </li>
+            <li class="tab14">
+                <a href="#tab14">
+                    <img src="images/location.png" alt="부산" class="location_ho">
+                </a>
+            </li>
+            <li class="tab15">
+                <a href="#tab15">
+                    <img src="images/location.png" alt="제주도" class="location_ho">
+                </a>
+            </li>
+        </ul>
+    
+        <!--탭 콘텐츠 영역 -->
+        <div class="tab_container">
+            <h1>매장찾기</h1>
+            <select name="city" id="city"></select>
+            <select name="borough" id="borough"></select>
+            <img src="images/search.png" alt="">
+            <!--각 탭과 이어진 박스에는 해당 id가 지정되어야 하고 모든 탭 박스들은 tab_content라는 동일한 클래스를 지녀야한다-->
+            <div id="tab1" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>강남구청역점</h2>
+                        <p>
+                            서울 강남구 논현동 111-31
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>서울대입구역점</h2>
+                        <p>
+                            서울 관악구 남부순환로 1811
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>잠실새내역점</h2>
+                        <p>
+                            서울 송파구 석촌호수로 84
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>구의사거리점</h2>
+                        <p>
+                            서울 광진구 자양로 205 (구의동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>압구정점</h2>
+                        <p>
+                            서울 강남구 압구정로 216 (신사동, 코끼리상가)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>연신내점</h2>
+                        <p>
+                            서울 은평구 연서로 29길 20 (갈현동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>마들역점</h2>
+                        <p>
+                            서울 노원구 동일로 1533 (상게동, 백산빌딩) 1층 103호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>노량진점</h2>
+                        <p>
+                            서울 동작구 노량진로 16길 31
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>강릉내곡점</h2>
+                        <p> 
+                            강원 강릉시 내곡동 422-9 101호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>강원양구점</h2>
+                        <p>
+                            강원 양구군 양구읍 중심로 192 (상리)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>원주중앙점</h2>
+                        <p>
+                            강원 원주시 무실로 1 (일산동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>청학사거리점</h2>
+                        <p>
+                            강원 속초시 수복로 135-1 (청학동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>강원횡성점</h2>
+                        <p>
+                            강원 횡성군 횡성읍 한우로 279-1 (읍하리) 1층 2호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>원주태장점</h2>
+                        <p>
+                            강원 원주시 복원로 2704-4 (태장동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>강릉중앙점</h2>
+                        <p>  
+                            강원 강릉시 신대학길 17 (금학동) 103호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>원주단계점</h2>
+                        <p>
+                            강원 원주시 단계동 1119-3
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab3" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>의정부시청점</h2>
+                        <p>
+                            경기 의정부시 둔야로 45번길 51 (의정부동) 지상 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>은계호수공원점</h2>
+                        <p>
+                            경기 시흥시 은계중앙로 21 (은행동, SJ타워) 1층 104호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>부천고강시장점</h2>
+                        <p>
+                            경기 부천시 고강동 318 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>남양주 묵현점</h2>
+                        <p>
+                            경기 남양주시 화도읍 먹갓로 28번길 5 (묵현리) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>김포마송점</h2>
+                        <p>
+                            경기 김포시 통진읍 김포대로 2231 (마송리) 103호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>녹양힐스테이트점</h2>
+                        <p>
+                            경기 의정부시 녹양로 64 (녹양동) 102호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>수원율전점</h2>
+                        <p>
+                            경기 수원시 장안구 율전동 298-3 운화빌딩 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>구리돌다리점</h2>
+                        <p>
+                            경기 구리시 경춘로 241-1 (수택동) 1층
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab4" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>청주방서점</h2>
+                        <p>
+                            충북 청주시 상당구 동남로 20 (방서동) 105호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>청주강서점</h2>
+                        <p>
+                            충북 청주시 흥덕구 강서동 488 106호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>청주동남지구점</h2>
+                        <p>
+                            충북 청주시 상당구 중고개로 117 (용암동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>충주연수중앙점</h2>
+                        <p>
+                            충북 충주시 번영대로 211 (연수동) 114호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>충주호암점</h2>
+                        <p>
+                            충북 충주시 호암토성3길 3 (호암동, 호암시그니처 603)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>청주테크노폴리스점</h2>
+                        <p>
+                            충북 청주시 흥덕구 송화로 178 (송절동) 101호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>단양점</h2>
+                        <p>
+                            충북 단양군 단양읍 삼봉로 319-1
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>충주칠금점</h2>
+                        <p>
+                            충북 충주시 칠금동 608
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab5" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>공주신관점</h2>
+                        <p>
+                            충남 공주시 흑수골길 37 (신관동) 1층 102호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>서산호수공원점</h2>
+                        <p>
+                            충남 서산시 호수공원5로 35 (예천동) 1층 101호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>서산예천점</h2>
+                        <p>
+                            충남 서산시 예천7로 4-10 (예천동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>당진읍내점</h2>
+                        <p>
+                            충남 당진시 읍내동 528-7 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>천안불당점</h2>
+                        <p>
+                            충남 천안시 서북구 불당23로 73-27 (불당동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>천안두정점</h2>
+                        <p>
+                            충남 천안시 서북구 두정동 909
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab6" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>목원대점</h2>
+                        <p>
+                            대전 서구 도안동 878
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>충남대점</h2>
+                        <p>
+                            대전 유성구 궁동로18번길 45 (궁동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>대전노은역점</h2>
+                        <p>
+                            대전 유성구 노은로 158 (지족동, 그랜드타운) 101호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>NC대전유성점</h2>
+                        <p>
+                            대전 유성구 봉명동 549-11 NC대전유성점 10층
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab7" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>완주봉동점</h2>
+                        <p>
+                            전북 완주군 봉동읍 완주산단8로 13 (둔산리)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>전주하가점</h2>
+                        <p>
+                            전북 전주시 덕진구 가련산로 10 (덕진동2가) 1층 104호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>전북정읍사점</h2>
+                        <p>
+                            전북 정읍시 정읍사로 580 (시기동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>군산디오션점</h2>
+                        <p>
+                            전북 군산시 궁포1로 46 (조촌동) 1동 1층 105호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>군산소룡점</h2>
+                        <p>
+                            전북 군산시 공항로 90 (소룡동) 1층 101호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>전주태평진북점</h2>
+                        <p>
+                            전북 전주시 완산구 공복로 18 (태평동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>군산비응도점</h2>
+                        <p>
+                            전북 군산시 비응도동 83-7
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>전북대점</h2>
+                        <p>
+                            전북 전주시 덕진구 기린대로 466 (덕진동1가) 1층 101호
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab8" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>광주용봉점</h2>
+                        <p>
+                            광주 북구 비엔날레로 75 (용봉동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>광주첨단2지구점</h2>
+                        <p>
+                            광주 북구 첨단연신로107번길 21 (신용동) 104호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>광주본촌점</h2>
+                        <p>
+                            광주 북구 하서로 477 (본촌동) 1층 107호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>소태점</h2>
+                        <p>
+                            광주 동구 지원로 4 (소태동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>광주백운점</h2>
+                        <p>
+                            광주 남구 백운로 69 (백운동) 1층 103호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>광주쌍촌점</h2>
+                        <p>
+                            광주 서구 내방로 242 (쌍촌동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>광주양림점</h2>
+                        <p>
+                            광주 남구 정율성로 22 (양림동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>광주삼각점</h2>
+                        <p>
+                            광주 북구 안산로 85 (삼각동) 1층
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab9" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>순천동부청사점</h2>
+                        <p>
+                            전남 순천시 해룡면 신대로 8 (신대리) 1층 102호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>여수서시장점</h2>
+                        <p>
+                            전남 여수시 좌수영로 9 (서교동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>순천NC점</h2>
+                        <p>
+                            전남 순천시 비봉2길 11 (조례동) 2층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>여수무선점</h2>
+                        <p>
+                            전남 여수시 화산로 92 (화장동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>순천용당점</h2>
+                        <p>
+                            전남 순천시 용당동 355-1 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>여수장성점</h2>
+                        <p>
+                            전남 여수시 소호로 591 (안산동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>여수웅천점</h2>
+                        <p>
+                            전남 여수시 웅천5길 7 (웅천동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>광양중동점</h2>
+                        <p>
+                            전남 광양시 광장로 105 (중동) 1층
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab10" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>구미황상점</h2>
+                        <p>
+                            경북 구미시 검성로 88 (황산동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>경북성주점</h2>
+                        <p>
+                            경북 성주군 성주읍 성주로 3248 (성산리) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>경산펜타힐즈점</h2>
+                        <p>
+                            경북 경산시 중산동 637 113호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>포항양학점</h2>
+                        <p>
+                            경북 포항시 북구 양학로 51 (득량동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>영주가흥점</h2>
+                        <p>
+                            경북 영주시 대동로13번길 28-1 (가흥동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>경주황성점</h2>
+                        <p>
+                            경북 경주시 황성동 503-9 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>김천덕곡점</h2>
+                        <p>
+                            경북 김천시 한마음길 2 (덕곡동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>상주시청점</h2>
+                        <p>
+                            경북 상주시 상산로 242 (남성동)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab11" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>대구서재점</h2>
+                        <p>
+                            대구 달성군 다사읍 서재로 128 (서재리) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>대구동서변점</h2>
+                        <p>
+                            대구 북구 서변로 55-1 (서변동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>대명계대점</h2>
+                        <p>
+                            대구 남구 대명동 1892-52 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>대구동구청점</h2>
+                        <p>
+                            대구 동구 아양로 204 (효목동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>칠곡운암역점</h2>
+                        <p>
+                            대구 북구 구암로 139 (동천동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>수성시장점</h2>
+                        <p>
+                            대구 수성구 수성동3가 329 수성시장 네거리
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>대구용산점</h2>
+                        <p>
+                            대구 달서구 용산서로 14-8 (용산동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>대구지묘점</h2>
+                        <p>
+                            대구동구 팔공로91길 32 (지묘동) 1층
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab12" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>김해주촌점</h2>
+                        <p>
+                            경남 김해시 주촌면 선천남로 83 (선지리) 1층 101호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>진주법원점</h2>
+                        <p>
+                            경남 진주시 신안동 581-3 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>김해상동점</h2>
+                        <p>
+                            경남 김해시 상동면 상동로 563 (대감리) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>김해율하점</h2>
+                        <p>
+                            경남 김해시 관동동 1125-4 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>김해진례점</h2>
+                        <p>
+                            경남 김해시 진례면 송현로 43 (송정리) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>경남하동점</h2>
+                        <p>
+                            경남 하동군 진교면 경충로 1051 (진교리) 3호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>통영북신점</h2>
+                        <p>
+                            경남 통영시 북신동 660-9
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>거제수월점</h2>
+                        <p>
+                            경남 거제시 수양로 457 (수월동)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab13" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>울산남목점</h2>
+                        <p>
+                            울산 동구 동해안로 3 (서부동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>울산매곡점</h2>
+                        <p>
+                            울산 북구 매산로 3 (매곡동) 1동 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>온산덕신점</h2>
+                        <p>
+                            울산 울주군 온산읍 덕망로 72 (덕신리) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>무거문수점</h2>
+                        <p>
+                            울산 남구 무거동 833-1
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>울산다운점</h2>
+                        <p>
+                            울산 중구 구르미7길 46 (다운동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>야음롯데캐슬점</h2>
+                        <p>
+                            울산남구 중앙로 2 (야음동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>울산구영점</h2>
+                        <p>
+                            울산 울주군 범서읍 점촌3길 8-2 (구영리)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>언양점</h2>
+                        <p>
+                            울산 울주군 언양읍 헌양길 71 (남부리)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab14" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>장림본동점</h2>
+                        <p>
+                            부산 사하구 다대로277번길 3 (장림동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>신평배고개점</h2>
+                        <p>
+                            부산 사하구 신평동 161-175
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>부산가야역점</h2>
+                        <p>
+                            부산 부산진구 가야대로 645 (가야동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>부산민락점</h2>
+                        <p>
+                            부산 수영구 광남로 219 (민락동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>동대신점</h2>
+                        <p>
+                            부산 서구 구덕고 337 (서대신동3가) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>해운대역점</h2>
+                        <p>
+                            부산 해운대구 구남로 8-2 (우동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>서면점</h2>
+                        <p>
+                            부산 부산진구 중앙대로702번길 21 (부전동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>부산역점</h2>
+                        <p>
+                            부산 동구 중앙대로 207-1 (초량동) 1층
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab15" class="tab_content">
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>제주일도점</h2>
+                        <p>
+                            제주특별자치도 제주시 동광로 87 (일도이동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>제주아라점</h2>
+                        <p>
+                            제주특별자치도 제주시 아라일동 6102
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>제주한라대점</h2>
+                        <p>
+                            제주특별자치도 제주시 한라대학로 37 (노형동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>제주시청점</h2>
+                        <p>
+                            제주특별자치도 제주시 광양10길 3 (이도이동) 1층
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>서귀포서홍점</h2>
+                        <p>
+                            제추특별자치도 서귀포시 홍중로 43 (서홍동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>제주용담점</h2>
+                        <p>
+                            제주특별자치도 제주시 용담로 39 (용담삼동)
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>제주삼화점</h2>
+                        <p>
+                            제주특별자치도 제주시 건주로4길 6-8 (도련일동) 104호
+                        </p>
+                    </div>
+                </div>
+                <div class="store_box clearfix">
+                    <div class="store_img left">
+                        <img src="images/store.png" alt="가게일러스트">
+                    </div>
+                    <div class="store_text right">
+                        <h2>모슬포점</h2>
+                        <p>
+                            제주특별자치도 서귀포시 대정읍 상모대서로 6 (상모리)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--탭 제이쿼리-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			//처음들어갔을때 모습 만들기...
+			$(".tab_content").hide(); //tab_content 부분을 모두 숨김.
+			$("ul.tabs li:first").addClass("active").show(); //첫번째 탭이 active클래스를 붙이고, 보여줌.
+			$(".tab_content:first").show(); //tab_contents중 첫번째꺼를 보여줌
+
+			//On Click Event
+			$("ul.tabs li").click(function() {
+
+				$("ul.tabs li").removeClass("active"); //Remove any "active" class
+				$(this).addClass("active"); //선택한 탭에만 active클래스 붙임
+				$(".tab_content").hide(); //모든 contents들 숨김
+
+				var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+				/*.attr( attributeName ) -> 선택한 요소의 속성의 값을 가져옵니다.
+				.find()는 어떤 요소의 하위 요소 중 특정 요소를 찾을 때 사용합니다.*/
+				$(activeTab).fadeIn(); //Fade in the active ID content(active되어있는 칸의 id 값을 가진 부분이 나타남)
+				return false;
+			});
+
+		});
+	</script>
+    <script>
+        $(function () {
+            //이미지 변경 함수 호출
+            //01
+            $(".tabs li.active").find("img").attr("src", "images/location_on.png");//변경될 이미지 주소를 넣어주세요
+            $(".tabs li").mouseenter(function () {
+                $(this).find("img").attr("src", "images/location_on.png");//변경될 이미지 주소를 넣어주세요
+            });
+            $(".tabs li").mouseleave(function () {
+                if ($(this).hasClass("active")) {
+                    $(".tabs li.active").find("img").attr("src", "images/location_on.png");//변경될 이미지 주소를 넣어주세요
+                } else {
+                    $(this).find("img").attr("src", "images/location.png");//변경될 이미지 주소를 넣어주세요
+                }
+
+            });
+
+            $(".tabs li").click(function () {
+                $(this).find("img").attr("src", "images/location_on.png");//변경될 이미지 주소를 넣어주세요
+                $(this).siblings().find("img").attr("src", "images/location.png");
+            });
+        });
+    </script>
+    <!--footer-->
+    <div id="footer">
+        <div id="footer_in" class="clearfix">
+            <div class="logobox">
+                <h1>
+                    <a href="#">
+                        <img src="images/fsub_logo.png" alt="푸터로고">
+                    </a>
+                 </h1>
+            </div>
+            <div class="copybox">
+                <p>
+                    OPEN 09:30 CLOSE 21:00 | TEL 1588-1000<br>
+                    대표자 : 채민정<br>
+                    COPYRIGHTⓒ2022 FRUITS FACTORY ALL RIGHTS RESERVED
+                </p>
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <img src="images/facebook.png" alt="페북">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                             <img src="images/instagram.png" alt="인스타">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/youtube.png" alt="유튜브">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('document').ready(function() {
+
+            var area0 = ["시/도","서울특별시","인천광역시","대전광역시","광주광역시","대구광역시","울산광역시","부산광역시","경기도","강원도","충청북도","충청남도","전라북도","전라남도","경상북도","경상남도","제주도"];
+
+            var area1 = ["강남구","강동구","강북구","강서구","관악구","광진구","구로구","금천구","노원구","도봉구","동대문구","동작구","마포구","서대문구","서초구","성동구","성북구","송파구","양천구","영등포구","용산구","은평구","종로구","중구","중랑구"];
+
+            var area2 = ["계양구","남구","남동구","동구","부평구","서구","연수구","중구","강화군","옹진군"];
+
+            var area3 = ["대덕구","동구","서구","유성구","중구"];
+
+            var area4 = ["광산구","남구","동구","북구","서구"];
+
+            var area5 = ["남구","달서구","동구","북구","서구","수성구","중구","달성군"];
+
+            var area6 = ["남구","동구","북구","중구","울주군"];
+
+            var area7 = ["강서구","금정구","남구","동구","동래구","부산진구","북구","사상구","사하구","서구","수영구","연제구","영도구","중구","해운대구","기장군"];
+
+            var area8 = ["고양시","과천시","광명시","광주시","구리시","군포시","김포시","남양주시","동두천시","부천시","성남시","수원시","시흥시","안산시","안성시","안양시","양주시","오산시","용인시","의왕시","의정부시","이천시","파주시","평택시","포천시","하남시","화성시","가평군","양평군","여주군","연천군"];
+
+            var area9 = ["강릉시","동해시","삼척시","속초시","원주시","춘천시","태백시","고성군","양구군","양양군","영월군","인제군","정선군","철원군","평창군","홍천군","화천군","횡성군"];
+
+            var area10 = ["제천시","청주시","충주시","괴산군","단양군","보은군","영동군","옥천군","음성군","증평군","진천군","청원군"];
+
+            var area11 = ["계룡시","공주시","논산시","보령시","서산시","아산시","천안시","금산군","당진군","부여군","서천군","연기군","예산군","청양군","태안군","홍성군"];
+
+            var area12 = ["군산시","김제시","남원시","익산시","전주시","정읍시","고창군","무주군","부안군","순창군","완주군","임실군","장수군","진안군"];
+
+            var area13 = ["광양시","나주시","목포시","순천시","여수시","강진군","고흥군","곡성군","구례군","담양군","무안군","보성군","신안군","영광군","영암군","완도군","장성군","장흥군","진도군","함평군","해남군","화순군"];
+
+            var area14 = ["경산시","경주시","구미시","김천시","문경시","상주시","안동시","영주시","영천시","포항시","고령군","군위군","봉화군","성주군","영덕군","영양군","예천군","울릉군","울진군","의성군","청도군","청송군","칠곡군"];
+
+            var area15 = ["거제시","김해시","마산시","밀양시","사천시","양산시","진주시","진해시","창원시","통영시","거창군","고성군","남해군","산청군","의령군","창녕군","하동군","함안군","함양군","합천군"];
+
+            var area16 = ["서귀포시","제주시","남제주군","북제주군"];
+
+
+
+
+
+
+
+            // 시/도 선택 박스 초기화
+
+
+
+            $("select[name^=city]").each(function() {
+
+            $selcity = $(this);
+
+            $.each(eval(area0), function() {
+
+            $selcity.append("<option value='"+this+"'>"+this+"</option>");
+
+            });
+
+            $selcity.next().append("<option value=''>구/군</option>");
+
+            });
+
+
+
+
+
+
+
+            // 시/도 선택시 구/군 설정
+
+
+
+            $("select[name^=city]").change(function() {
+
+            var area = "area"+$("option",$(this)).index($("option:selected",$(this))); // 선택지역의 구군 Array
+
+            var $borough = $(this).next(); // 선택영역 군구 객체
+
+            $("option",$borough).remove(); // 구군 초기화
+
+
+
+            if(area == "area0")
+
+            $borough.append("<option value=''>구/군</option>");
+
+            else {
+
+            $.each(eval(area), function() {
+
+            $borough.append("<option value='"+this+"'>"+this+"</option>");
+
+            });
+
+            }
+
+            });
+        });
+    </script>
+</body>
+
+</html>

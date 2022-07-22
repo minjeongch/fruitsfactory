@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+.lottemartdream * {
+   font-family: 'LotteMartDream', sans-serif;
+}
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol{
+    list-style: none;
+}
+img, video{
+    vertical-align: middle;
+}
+body{
+    min-width: 1500px;
+    font-family: 'yg-jalnan';
+    font-size: 16px;
+    line-height: 23px;
+    color: #333;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*mainbanner*/
+#mainbanner{
+    position: relative;
+}
+#mainbanner> img{
+    width: 100%;
+    display: block;
+}
+.header{
+    width: 1320px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 32px;
+}
+.h_logo{
+    float: left;
+}
+.gnb{
+    float: right;
+    margin-top: 61px;
+}
+.gnb li{
+    padding-right: 107px;
+    float: left;
+    color: #23b6bf;
+    font-size: 16px;
+}
+.gnb li:nth-child(5){
+    padding-right: 0;
+}
+.gnb li:hover a{
+    color: #dca517;
+}
+.sub_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #ffb554;
+}
+.sub_box h1{
+    font-size: 80px;
+    line-height: 100%;
+    padding-bottom: 80px;
+}
+.sub_box p{
+    font-size: 25px;
+    line-height: 110%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+
+/*story*/
+#story_in{
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+}
+#story_in h1{
+    font-size: 45px;
+    line-height: 100%;
+    padding: 234px 0 158px;
+}
+.typing-txt{
+    display: none;
+}
+.typing ul li{
+    font-family: 'LotteMartDream';
+    font-size: 30px;
+    line-height: 110%;
+    margin-bottom: 40px;
+}
+.typing ul li.on{  
+	display: inline-block; 
+	animation-name: cursor; 
+	animation-duration: 0.3s; 
+	animation-iteration-count: infinite; 
+} 
+@keyframes cursor{ 
+	0%{border-right: 1px solid #fff} 
+	50%{border-right: 1px solid #000} 
+	100%{border-right: 1px solid #fff} 
+
+}
+
+/*container*/
+#container{
+    background-image: url(../images/bg_scroll.png);
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+/*promise*/
+#promise_in{
+    width: 1320px;
+    margin: auto;
+}
+#promise_in> h1{
+    text-align: center;
+    font-size: 40px;
+    line-height: 100%;
+    padding: 223px 0 161px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.p_text{
+    padding-top: 70px;
+    font-family: 'LotteMartDream';
+    font-weight: 700;
+}
+.pbox1_text{
+    width: 588px;
+    height: 489px;
+    padding-top: 140px;
+    padding-left: 171px;
+    box-sizing: border-box;
+}
+.pbox2_text{
+    width: 732px;
+    height: 573px;
+    padding-top: 172px;
+    padding-left: 171px;
+    box-sizing: border-box;
+}
+.pbox3_text{
+    width: 588px;
+    height: 531px;
+    padding-top: 140px;
+    padding-left: 171px;
+    box-sizing: border-box;
+}
+
+/*concept*/
+#concept_in{
+    width: 1320px;
+    margin: auto;
+}
+#concept_in h1{
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    padding-top: 99px;
+}
+#concept_in ul{
+    padding: 173px 0 261px;
+}
+#concept_in ul li{
+    float: left;
+    width: 384px;
+    height: 528px;
+    font-family: 'LotteMartDream';
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    padding-top: 433px;
+}
+.concept01{
+    background-image: url(../images/bg_concept01.png);
+    padding-left: 85px;
+    transition: all 0.5s;
+}
+.concept01:hover{
+    background-image: url(../images/bg_concept01_hover.png);
+}
+.concept02{
+    background-image: url(../images/bg_concept02.png);
+    padding-left: 100px;
+    margin: 0 84px;
+    transition: all 0.5s;
+}
+.concept02:hover{
+    background-image: url(../images/bg_concept02_hover.png);
+}
+.concept03{
+    background-image: url(../images/bg_concept03.png);
+    padding-left: 115px;
+    transition: all 0.5s;
+}
+.concept03:hover{
+    background-image: url(../images/bg_concept03_hover.png);
+}
+
+/*iden*/
+#iden_in{
+    width: 1244px;
+    margin: auto;
+    padding-bottom: 197px;
+}
+#iden_in h1{
+    text-align: center;
+    font-size: 40px;
+    line-height: 100%;
+    padding-bottom: 94px;
+}
+.i_logo{
+    float: left;
+    width: 605px;
+}
+.i_text{
+    float: right;
+    width: 639px;
+    font-family: 'LotteMartDream';
+    font-weight: 700;
+    font-size: 18px;
+    padding-left: 110px;
+    padding-top: 175px;
+    height: 304px;
+    box-sizing: border-box;
+}
+
+/*footer*/
+#footer{
+    background-color: #949493;
+}
+#footer_in{
+    width: 1320px;
+    margin: auto;
+}
+.logobox{
+    float: left;
+    padding-top: 50.5px;
+}
+.copybox{
+    float: right;
+    text-align: right;
+    padding-top: 60px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+.copybox ul li{
+    float: left;
+    margin-left: 10px;
+}
+.copybox ul li img{
+    opacity: 0.5;
+}
+.copybox ul li:hover img{
+    opacity: 1;
+}
+.copybox ul{
+    display: inline-block;
+    padding-top: 20px;
+}
