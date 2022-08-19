@@ -8,11 +8,13 @@
     <title>FRUITS FACTORY</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="css/aos.css" rel="stylesheet">
+    <script src="js/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/aboutstyle.css">
 </head>
 
@@ -42,28 +44,30 @@
             </p>
         </div>
     </div>
-    
+
     <div id="container">
         <!--story-->
         <div id="story" style="height: 737px;">
             <div id="story_in">
                 <h1>STORY OF FRUITS FACTORY</h1>
-                <div class="typing-txt"><!--내용물안에 클래스를 줘서 스타일을 주면 적용이 안되니(자바스크립트가 클래스를 지웠다 없앴다 하는거라 없어져요~) nth-child등을 이용해 적용해주세요~!-->
+                <div class="typing-txt">
+                    <!--내용물안에 클래스를 줘서 스타일을 주면 적용이 안되니(자바스크립트가 클래스를 지웠다 없앴다 하는거라 없어져요~) nth-child등을 이용해 적용해주세요~!-->
                     <ul>
-                    <li>"매일매일 반복되는 일상 속 에서 활력을 불어넣어줄 주스가 마시고 싶다"</li>
-                    <li>라는 생각에서 후르츠팩토리는 시작되었습니다.</li>
-                    <li>맛은 물론 건강과 환경까지 생각한 주스를 만들기 위한 끊임없는 노력은</li>
-                    <li>오랜시간 동안 소비자 분들께 사랑받고 있는 이유입니다.</li>
-                </ul>
-                </div> 
-                <div class="typing"><!--글이 나타나는 위치에 관련된 속성은 여기 주세요!-->
-                    <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                        <li>"매일매일 반복되는 일상 속 에서 활력을 불어넣어줄 주스가 마시고 싶다"</li>
+                        <li>라는 생각에서 후르츠팩토리는 시작되었습니다.</li>
+                        <li>맛은 물론 건강과 환경까지 생각한 주스를 만들기 위한 끊임없는 노력은</li>
+                        <li>오랜시간 동안 소비자 분들께 사랑받고 있는 이유입니다.</li>
                     </ul>
-                </div>  
+                </div>
+                <div class="typing">
+                    <!--글이 나타나는 위치에 관련된 속성은 여기 주세요!-->
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -83,7 +87,7 @@
                             저희 후르츠팩토리는 직영공장을 보유하고 있<br>
                             어 신선도를 유지하는데에 있어 탁월한 장점이<br>
                             있습니다 또한 당일 배송받은 과일만을 사용하<br>
-                            며 하루지난  과일들은 사용하지 않아 프리미엄<br>
+                            며 하루지난 과일들은 사용하지 않아 프리미엄<br>
                             과일주스의 명성을 이어나갈수 있도록 소비자<br>
                             여러분들께 약속 드리겠습니다.
                         </p>
@@ -151,7 +155,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <!--identity-->
         <div id="iden">
             <div id="iden_in" class="clearfix">
@@ -179,7 +183,7 @@
                     <a href="#">
                         <img src="images/fsub_logo.png" alt="푸터로고">
                     </a>
-                 </h1>
+                </h1>
             </div>
             <div class="copybox">
                 <p>
@@ -195,7 +199,7 @@
                     </li>
                     <li>
                         <a href="#">
-                             <img src="images/instagram.png" alt="인스타">
+                            <img src="images/instagram.png" alt="인스타">
                         </a>
                     </li>
                     <li>
@@ -211,73 +215,73 @@
         AOS.init();
     </script>
     <script>
-		var typingBool = false; 
-		var typingIdx=0; 
-		var liIndex = 0;
-		var liLength = $(".typing-txt>ul>li").length;
+        var typingBool = false;
+        var typingIdx = 0;
+        var liIndex = 0;
+        var liLength = $(".typing-txt>ul>li").length;
 
-		// 타이핑될 텍스트를 가져온다 
-		var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
-		//liIndex 인덱스로 구분해 한줄씩 가져옴
+        // 타이핑될 텍스트를 가져온다 
+        var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
+        //liIndex 인덱스로 구분해 한줄씩 가져옴
 
-		typingTxt=typingTxt.split(""); // 한글자씩 잘라 배열로만든다
+        typingTxt = typingTxt.split(""); // 한글자씩 잘라 배열로만든다
 
-		if(typingBool==false){ // 타이핑이 진행되지 않았다면 
-			typingBool=true; 
-			var tyInt = setInterval(typing,100); // 반복동작 
-		} 
-			 
-		function typing(){ 
-		  $(".typing ul li").removeClass("on");
-		   $(".typing ul li").eq(liIndex).addClass("on");
-		  //현재 타이핑되는 문장에만 커서 애니메이션을 넣어준다.
-		  
-		  if(typingIdx<typingTxt.length){ // 타이핑될 텍스트 길이만큼 반복 
-			 $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
-			 typingIdx++; 
-		   } else{ //한문장이끝나면
-			 if(liIndex<liLength-1){
-			 //다음문장으로  가기위해 인덱스를 1증가
-			   liIndex++; 
-			 //다음문장을 타이핑하기위한 셋팅
-				typingIdx=0;
-				typingBool = false; 
-				typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
-			   
-			 //다음문장 타이핑전 1초 쉰다
-				 clearInterval(tyInt);
-				  //타이핑종료
-			 
-				 setTimeout(function(){
-				   //1초후에 다시 타이핑 반복 시작
-				   tyInt = setInterval(typing,100);
-				 },1000);
-				} else if(liIndex==liLength-1){
-				  
-				 //마지막 문장까지 써지면 반복종료
-				   clearInterval(tyInt);
-				  
-				  //1초후
-				  setTimeout(function(){
-					//사용했던 변수 초기화
-					typingBool = false; 
-				  liIndex=0;
-				  typingIdx=-0;
-					
-					//첫번째 문장으로 셋팅
-				  typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
-					   //타이핑 결과 모두 지우기
-				  $(".typing ul li").html("")
-					
-					//반복시작
-					tyInt = setInterval(typing,100);
-				  }, 1000);
-				  
-				  
-				}
-			} 
-		}  
-	</script>
+        if (typingBool == false) { // 타이핑이 진행되지 않았다면 
+            typingBool = true;
+            var tyInt = setInterval(typing, 100); // 반복동작 
+        }
+
+        function typing() {
+            $(".typing ul li").removeClass("on");
+            $(".typing ul li").eq(liIndex).addClass("on");
+            //현재 타이핑되는 문장에만 커서 애니메이션을 넣어준다.
+
+            if (typingIdx < typingTxt.length) { // 타이핑될 텍스트 길이만큼 반복 
+                $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
+                typingIdx++;
+            } else { //한문장이끝나면
+                if (liIndex < liLength - 1) {
+                    //다음문장으로  가기위해 인덱스를 1증가
+                    liIndex++;
+                    //다음문장을 타이핑하기위한 셋팅
+                    typingIdx = 0;
+                    typingBool = false;
+                    typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
+
+                    //다음문장 타이핑전 1초 쉰다
+                    clearInterval(tyInt);
+                    //타이핑종료
+
+                    setTimeout(function () {
+                        //1초후에 다시 타이핑 반복 시작
+                        tyInt = setInterval(typing, 100);
+                    }, 1000);
+                } else if (liIndex == liLength - 1) {
+
+                    //마지막 문장까지 써지면 반복종료
+                    clearInterval(tyInt);
+
+                    //1초후
+                    setTimeout(function () {
+                        //사용했던 변수 초기화
+                        typingBool = false;
+                        liIndex = 0;
+                        typingIdx = -0;
+
+                        //첫번째 문장으로 셋팅
+                        typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
+                        //타이핑 결과 모두 지우기
+                        $(".typing ul li").html("")
+
+                        //반복시작
+                        tyInt = setInterval(typing, 100);
+                    }, 1000);
+
+
+                }
+            }
+        }  
+    </script>
 </body>
 
 </html>
